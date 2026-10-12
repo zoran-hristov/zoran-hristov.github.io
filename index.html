@@ -3,45 +3,231 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HomeWatch</title>
-<meta name="description" content="HomeWatch is a personal, non-commercial home-monitoring app for a single household.">
+<title>Zoran Hristov – Cloud Architect, DevOps & GenAI Agents Lead</title>
+<meta name="description" content="Zoran Hristov – Senior Cloud Architect, DevOps and Generative AI Agents lead in Amsterdam. Python, FastAPI, Terraform, AWS, Azure, MLOps/LLMOps.">
 <style>
-  body { font-family: system-ui, -apple-system, sans-serif; max-width: 42rem;
-         margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #222; }
-  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 2rem; }
-  .muted { color: #666; font-size: .9rem; }
-  footer { margin-top: 3rem; border-top: 1px solid #ddd; padding-top: 1rem; }
+  :root {
+    --bg: #fbfbfa; --fg: #1d1d1f; --muted: #5f6368; --rule: #e3e3e0;
+    --accent: #1f6feb; --chip: #eef2f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141518; --fg: #e8e8ea; --muted: #a0a4ab; --rule: #2c2e33;
+      --accent: #6aa6ff; --chip: #22252b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 50rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header h1 { font-size: 2.2rem; letter-spacing: -.02em; margin: 0; }
+  header .role { font-size: 1.1rem; color: var(--muted); margin: .25rem 0 1rem; }
+  .contact { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; font-size: .95rem;
+             color: var(--muted); padding: 0; margin: 0; list-style: none; }
+
+  h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .12em;
+       color: var(--muted); border-bottom: 1px solid var(--rule);
+       padding-bottom: .4rem; margin: 2.75rem 0 1.25rem; }
+  h3 { font-size: 1.05rem; margin: 0; }
+  .meta { color: var(--muted); font-size: .9rem; margin: .1rem 0 .6rem; }
+  section > article { margin-bottom: 1.75rem; }
+  ul.points { padding-left: 1.1rem; margin: .4rem 0 0; }
+  ul.points li { margin-bottom: .45rem; }
+  ul.points b { font-weight: 600; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: .4rem; padding: 0; margin: 0;
+           list-style: none; }
+  .chips li { background: var(--chip); border-radius: 999px; padding: .2rem .7rem;
+              font-size: .85rem; }
+
+  .project { border: 1px solid var(--rule); border-radius: 10px; padding: 1rem 1.2rem; }
+  .project p { margin: .4rem 0 0; }
+
+  footer { margin-top: 3.5rem; font-size: .85rem; color: var(--muted); }
+
+  @media print {
+    :root { --bg: #fff; --fg: #000; --muted: #444; --accent: #000; --chip: #f0f0f0; }
+    main { padding: 0; max-width: none; }
+    h2 { margin-top: 1.5rem; }
+    footer, .no-print { display: none; }
+    article { break-inside: avoid; }
+  }
 </style>
 </head>
 <body>
+<main>
 
-<h1>HomeWatch</h1>
+<header>
+  <h1>Zoran Hristov</h1>
+  <p class="role">Senior Cloud Architect, DevOps &amp; GenAI Agents Lead</p>
+  <ul class="contact">
+    <li>Amsterdam, Netherlands</li>
+    <li><a href="mailto:zhrist@gmail.com">zhrist@gmail.com</a></li>
+    <li><a href="https://github.com/zoran-hristov">github.com/zoran-hristov</a></li>
+  </ul>
+</header>
 
-<p>HomeWatch is a personal, non-commercial home-monitoring application, written
-and run by an individual developer for use in a single household. It is not a
-product or a service, and it is not available to the public.</p>
+<section>
+  <h2>Profile</h2>
+  <p>Senior Cloud Architect, DevOps leader and Generative AI specialist with over
+  15 years of experience architecting, scaling and operationalising production-grade
+  cloud infrastructure, backend API microservices and AI agent solutions across
+  highly regulated enterprise environments. Expert in Python 3.x, FastAPI and test
+  automation with pytest, with extensive Infrastructure as Code (Terraform) and
+  multi-cloud expertise across AWS and Azure. Track record of establishing
+  enterprise MLOps/LLMOps frameworks, deploying autonomous AI agent workflows, and
+  driving continuous integration and platform delivery across cross-functional
+  global teams.</p>
+</section>
 
-<h2>What it does</h2>
-<ul>
-  <li>Shows which devices on the home network are active and which internet
-      services they contact, and flags unusual activity.</li>
-  <li>Takes still images from the household's own cameras and produces short
-      text descriptions of them.</li>
-  <li>Keeps backup copies of those images, and of its own database, in the
-      developer's own Google Drive.</li>
-</ul>
+<section>
+  <h2>Core skills</h2>
+  <ul class="chips">
+    <li>Python 3.x</li><li>FastAPI</li><li>pytest</li><li>REST APIs</li>
+    <li>Terraform</li><li>Docker</li><li>Kubernetes (AKS/EKS)</li>
+    <li>Azure DevOps</li><li>GitHub Actions</li><li>AWS</li><li>Azure</li>
+    <li>Entra ID</li><li>Microsoft Graph</li><li>CosmosDB</li>
+    <li>PySpark</li><li>Airflow</li><li>Databricks</li><li>SageMaker</li>
+    <li>LLM applications</li><li>Multi-agent orchestration</li><li>Tool calling</li>
+    <li>AWS Bedrock</li><li>Azure OpenAI</li><li>MLOps / LLMOps</li>
+    <li>LLM FinOps</li><li>Observability</li>
+  </ul>
+</section>
 
-<h2>Google Drive access</h2>
-<p>HomeWatch uses the Google Drive API only to store and manage the backup files
-it creates itself, in the developer's own Drive account. It does not read or
-change any other files, and it does not share data from Google with anyone. See
-the <a href="privacy.html">privacy policy</a> for details.</p>
+<section>
+  <h2>Experience</h2>
+
+  <article>
+    <h3>Associate Partner &amp; Principal AI Advisor · Adaleo R&amp;D</h3>
+    <p class="meta">July 2021 – present</p>
+    <ul class="points">
+      <li><b>Python 3.x, FastAPI &amp; RESTful microservices:</b> scalable, asynchronous
+        RESTful APIs and backend microservices, with strict pytest standards for
+        automated unit and integration testing across CI/CD pipelines.</li>
+      <li><b>Azure cloud infrastructure, Entra ID &amp; Terraform:</b> cloud-native
+        solutions using Entra ID authentication, Microsoft Graph API, Azure Storage
+        Accounts and CosmosDB; Infrastructure as Code with Terraform and Azure DevOps
+        CI/CD for Docker services on Kubernetes (AKS/EKS).</li>
+      <li><b>Healthcare &amp; regulated AI governance:</b> AI governance frameworks
+        aligned with the EU AI Act, GDPR and Responsible AI principles across
+        regulated multi-tenant enterprise environments.</li>
+      <li><b>Secure integrations &amp; authentication:</b> zero-trust authorisation and
+        OAuth2/JWT/mTLS identity propagation for GenAI function calling across
+        ServiceNow, BMC Helix, Jira, Confluence and GitHub enterprise APIs.</li>
+      <li><b>AI FinOps &amp; cost governance:</b> prompt-length optimisation, token
+        budgeting and caching (AWS Bedrock) to control Generative AI API costs and
+        enforce per-application quotas.</li>
+      <li><b>Reliability, monitoring &amp; telemetry:</b> end-to-end telemetry,
+        distributed tracing, live dashboards and real-time drift and performance
+        alerting for mission-critical ML production workloads.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>Freelance projects</h3>
+    <p class="meta">July 2021 – present</p>
+    <ul class="points">
+      <li><b>Python DevOps &amp; Azure Cloud Architect – Versuni</b> (Amsterdam):
+        lead architect for cloud-native Python enterprise microservices and AI
+        platforms. FastAPI, pytest, Entra ID, Microsoft Graph, Azure Storage,
+        CosmosDB; Terraform and Azure DevOps CI/CD for Docker microservices on
+        Kubernetes.</li>
+      <li><b>Cloud Infrastructure, Python &amp; Data Pipeline Lead – Gradyent</b>
+        (Rotterdam): scalable backend systems and data pipelines with Python, PySpark,
+        Airflow and Terraform; CI/CD via Azure DevOps and GitHub Actions.</li>
+      <li><b>Financial Analytics &amp; AI Dashboarding Lead – Shell</b> (Global
+        Financial Analytics): technical leadership for AI-driven financial analytics,
+        automated reporting and dashboarding; data pipelines, vector database
+        connectors and secure middleware for low-latency predictive insights.</li>
+      <li><b>IoT Systems &amp; Edge Automation – Greener:</b> advised the CTO on native
+        edge software and AWS fleet-management infrastructure (Lambda, ECS, IoT Core)
+        running automation algorithms across distributed devices.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>Senior DevOps &amp; Medical AI Solutions Architect · Philips Research</h3>
+    <p class="meta">October 2015 – July 2021</p>
+    <ul class="points">
+      <li><b>MLOps community:</b> created and led the company-wide MLOps community –
+        best practices, framework comparisons, inference options, Terraform templates
+        and reference blueprints.</li>
+      <li><b>Healthcare data &amp; analytics engineering (AWS):</b> high-throughput
+        pipelines with PySpark, SQL, Databricks and SageMaker for predictive
+        modelling, medical imaging and clinical reporting in regulated domains.</li>
+      <li><b>Model monitoring, QA &amp; explainability:</b> automated model QA and
+        evaluation standards with SHAP explainability, drift detection and continuous
+        validation.</li>
+      <li><b>Distributed medical data orchestration:</b> large-scale ETL/ELT pipelines
+        for visual and medical imaging datasets using SageMaker and containerised
+        workflows.</li>
+      <li><b>Practice building &amp; mentorship:</b> built AI capability across global
+        R&amp;D groups, mentoring 100+ engineers and consultants, and led pre-sales
+        architecture for enterprise accounts.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>Senior Software Architect – Billing &amp; Pricing Integration · Tele2 Netherlands</h3>
+    <p class="meta">November 2013 – January 2015</p>
+    <ul class="points">
+      <li><b>Pricing models &amp; high-throughput microservices:</b> machine-learning
+        models and dynamic rating engines for pricing ancillary products; event-driven
+        microservices in Java (Spring Boot) and Python with ML inference pipelines,
+        BigQuery analytics, Docker deployments and automated GitHub Actions CI/CD.</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3>Development &amp; Architecture Lead · Seavus</h3>
+    <p class="meta">September 2005 – April 2012</p>
+    <ul class="points">
+      <li><b>Enterprise integration &amp; middleware:</b> platform integrations with
+        REST/SOAP APIs, XML messaging schemas and backend Java services to modernise
+        core billing systems.</li>
+    </ul>
+  </article>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="project">
+    <h3><a href="/homewatch/">HomeWatch</a></h3>
+    <p>A personal home-monitoring system on a Raspberry Pi: five containers on
+    balenaOS (Postgres, dnsmasq, an asyncio collector, an APScheduler worker and a
+    FastAPI + React dashboard). It watches DNS activity on the home network with a
+    rules engine for threats, captures stills and motion clips from Blink and Tapo
+    cameras, describes them with vision models (Claude, Gemini or any
+    OpenAI-compatible endpoint), and backs up media to Google Drive with rclone.
+    Each service has its own Dockerised test suite.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Education &amp; certifications</h2>
+  <ul class="points">
+    <li>Master of Science in Computer Science (Informatics, Automatics and Computer
+      Science)</li>
+    <li>AWS Certified Solutions Architect</li>
+    <li>AWS Certified Machine Learning – Specialty</li>
+    <li>Microsoft Certified: Azure AI Engineer Associate</li>
+    <li>ServiceNow Certified System Administrator (or equivalent hands-on experience)</li>
+    <li>DeepLearning.AI – LLM &amp; Agentic AI specialisations</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Outside work</h2>
+  <p>Running, tennis, table tennis, chess and photography.</p>
+</section>
 
 <footer>
-  <p><a href="privacy.html">Privacy policy</a></p>
-  <p class="muted">Provided as is, without warranty. HomeWatch is not a
-  security, alarm, or safety product.</p>
+  <p><a href="/homewatch/">HomeWatch</a> · <a href="/privacy.html">HomeWatch privacy policy</a></p>
 </footer>
 
+</main>
 </body>
 </html>
